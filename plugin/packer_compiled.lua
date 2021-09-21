@@ -99,6 +99,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim"
   },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim"
+  },
   ["minimap.vim"] = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\minimap.vim"
