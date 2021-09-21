@@ -99,6 +99,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim"
   },
+  ["minimap.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\minimap.vim"
+  },
   neoformat = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoformat"
@@ -106,6 +110,10 @@ _G.packer_plugins = {
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

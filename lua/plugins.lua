@@ -22,6 +22,7 @@ config = function()
       end,
 }
     use "norcalli/nvim-colorizer.lua"
-
+    use "terrortylor/nvim-comment"
+    use {"wfxr/minimap.vim", run = "cargo install --locked code-minimap"}
 
 end)

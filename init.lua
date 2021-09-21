@@ -12,13 +12,21 @@ opt.guifont = "FiraCode NF:h13"
 
 -- Dracula
 g.colors_name = "Dracula"
-opt.termguicolors = true
+
+-- Mouse
+opt.mouse = "a"
 
 -- Lines
 opt.number = true
 opt.relativenumber = true
 opt.nu = true
 opt.rnu = true
+
+-- Minimap
+--TODO this is broken af
+g.minimap_width = 10
+g.minimap_auto_start = 1
+g.minimap_auto_start_win_enter = 1
 
 -- Clipboard
 opt.clipboard = "unnamed"
@@ -32,14 +40,9 @@ api.nvim_set_keymap('n', '<Leader>x', ':q!<CR>', { noremap = true, silent = true
 api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true, silent = true})
 api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true, silent = true})
 
-require 'colorizer'.setup {
-  '*'; -- Highlight all files, but customize some others.
-  '!vim'; -- Exclude vim from highlighting.
-  -- Exclusion Only makes sense if '*' is specified!
-}
-
-
 -- TODO 
+
+-- Formatting does not work
 
 -- augroup fmt
 --   autocmd!
