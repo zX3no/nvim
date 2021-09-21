@@ -115,6 +115,18 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons"
@@ -127,6 +139,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim"
   },
+  ["tabout.nvim"] = {
+    config = { "\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18config.tabout\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tabout.nvim",
+    wants = { "nvim-treesitter" }
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
@@ -134,6 +152,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: tabout.nvim
+time([[Config for tabout.nvim]], true)
+try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18config.tabout\frequire\0", "config", "tabout.nvim")
+time([[Config for tabout.nvim]], false)
 -- Config for: dashboard-nvim
 time([[Config for dashboard-nvim]], true)
 try_loadstring("\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21config.dashboard\frequire\0", "config", "dashboard-nvim")

@@ -5,6 +5,9 @@ local g = vim.g
 local opt = vim.opt
 local api = vim.api
 
+local map = vim.api.nvim_set_keymap
+local noremap = { noremap = true, silent = true }
+
 -- Neovide
 g.neovide_refresh_rate = 240
 g.neovide_cursor_antialiasing = true
@@ -35,14 +38,20 @@ opt.clipboard = "unnamed"
 g.mapleader = " " 
 g.better_escape_shortcut = {'jk', 'kj'}
 
-api.nvim_set_keymap('n', '<Leader><Space>', ':CHADopen<CR>', { noremap = true, silent = true})
-api.nvim_set_keymap('n', '<Leader>x', ':q!<CR>', { noremap = true, silent = true})
-api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true, silent = true})
-api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true, silent = true})
+
+
+map('n', '<Leader><Space>', ':CHADopen<CR>', noremap)
+map('n', '<Leader>x', ':q!<CR>', noremap)
+map('n', '<Leader>f', ':Telescope find_files<CR>', noremap)
+map('n', '<Leader>d', ':Telescope live_grep<CR>', noremap)
 
 -- TODO 
 
+-- Auto destroy minimap and chadtree when closing buffer
+
 -- Formatting does not work
+
+--Glow does not work
 
 -- augroup fmt
 --   autocmd!
