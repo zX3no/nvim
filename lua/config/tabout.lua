@@ -1,4 +1,4 @@
---TODO this does not work yet
+-- TODO this does not work yet
 require('tabout').setup {
     tabkey = '<Tab>', -- key to trigger tabout, set to an empty string to disable
     backwards_tabkey = '<S-Tab>', -- key to trigger backwards tabout, set to an empty string to disable
@@ -7,13 +7,10 @@ require('tabout').setup {
     enable_backwards = true, -- well ...
     completion = true, -- if the tabkey is used in a completion pum
     tabouts = {
-      {open = "'", close = "'"},
-      {open = '"', close = '"'},
-      {open = '`', close = '`'},
-      {open = '(', close = ')'},
-      {open = '[', close = ']'},
-      {open = '{', close = '}'}
-},
- ignore_beginning = true, --[[ if the cursor is at the beginning of a filled element it will rather tab out than shift the content ]]
+        {open = "'", close = "'"}, {open = '"', close = '"'},
+        {open = '`', close = '`'}, {open = '(', close = ')'},
+        {open = '[', close = ']'}, {open = '{', close = '}'}
+    },
+    ignore_beginning = true, --[[ if the cursor is at the beginning of a filled element it will rather tab out than shift the content ]]
     exclude = {} -- tabout will ignore these filetypes
 }

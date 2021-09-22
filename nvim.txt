@@ -1,13 +1,5 @@
-# Easy Key Mapping
-https://github.com/b0o/mapx.nvim
-https://github.com/LionC/nest.nvim
-
 # Main
-https://github.com/karb94/neoscroll.nvim
-https://github.com/glepnir/galaxyline.nvim
 https://github.com/sakhnik/nvim-gdb
-https://github.com/kyazdani42/nvim-tree.lua
-https://github.com/ahmedkhalf/project.nvim
 
 # Color Scheme
 https://github.com/tjdevries/colorbuddy.nvim
@@ -29,9 +21,7 @@ https://github.com/rafamadriz/friendly-snippets
 # LSP
 https://github.com/nvim-treesitter/nvim-treesitter
 https://github.com/hrsh7th/nvim-cmp
-https://github.com/neovim/nvim-lspconfig
 https://github.com/onsails/lspkind-nvim
-https://github.com/williamboman/nvim-lsp-installer
 
 # This is cool
 https://github.com/jbyuki/instant.nvim
@@ -43,7 +33,6 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 
 # Currently Added 
 https://github.com/wbthomason/packer.nvim
-https://github.com/ms-jpq/chadtree
 https://github.com/nvim-telescope/telescope.nvim
 https://github.com/jdhao/better-escape.vim
 https://github.com/Pocco81/AutoSave.nvim
@@ -56,3 +45,9 @@ https://github.com/terrortylor/nvim-comment
 https://github.com/wfxr/minimap.vim
 https://github.com/abecodes/tabout.nvim
 https://github.com/ellisonleao/glow.nvim
+https://github.com/williamboman/nvim-lsp-installer
+https://github.com/kyazdani42/nvim-tree.lua
+https://github.com/karb94/neoscroll.nvim
+https://github.com/ahmedkhalf/project.nvim
+https://github.com/glepnir/galaxyline.nvim
+https://github.com/b0o/mapx.nvim
