@@ -4,6 +4,7 @@ require("keybindings")
 
 local g = vim.g
 local opt = vim.opt
+local cmd = vim.api.nvim_command
 
 -- Neovide
 g.neovide_refresh_rate = 240
@@ -22,16 +23,34 @@ opt.relativenumber = true
 opt.nu = true
 opt.rnu = true
 
--- Minimap
--- TODO this is broken af
-g.minimap_width = 10
-g.minimap_auto_start = 1
-g.minimap_auto_start_win_enter = 1
+-- Scrollbar
+cmd("augroup ScrollbarInit")
+cmd("autocmd!")
+cmd(
+    "autocmd CursorMoved,VimResized,QuitPre * silent! lua require('scrollbar').show()")
+cmd("autocmd WinEnter,FocusGained * silent! lua require('scrollbar').show()")
+cmd(
+    "autocmd WinLeave,BufLeave,BufWinLeave,FocusLost * silent! lua require('scrollbar').clear()")
+cmd("augroup end")
+
+g.scrollbar_shape = {head = '▎', body = '▎', tail = '▎'}
+
+-- Neoformat
+cmd("augroup fmt")
+cmd("autocmd!")
+cmd("autocmd BufWritePre * undojoin | Neoformat")
+cmd("augroup END")
 
 -- Clipboard
 opt.clipboard = "unnamed"
 
 -- TODO 
+
+-- Shift hjkl for moving around Lsp menu instead of arrow keys
+
+-- How to make files using nvim-tree
+
+-- Need autosaver
 
 -- Auto destroy minimap and chadtree when closing buffer
 
@@ -39,7 +58,3 @@ opt.clipboard = "unnamed"
 
 -- Glow does not work
 
--- augroup fmt
---   autocmd!
---   autocmd BufWritePre * undojoin | Neoformat
--- augroup END

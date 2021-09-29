@@ -69,10 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["AutoSave.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\AutoSave.nvim"
-  },
   ["better-escape.vim"] = {
     loaded = false,
     needs_bufread = false,
@@ -100,17 +96,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim"
   },
-  ["lspkind-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim"
-  },
   ["mapx.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mapx.nvim"
-  },
-  ["minimap.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\minimap.vim"
   },
   neoformat = {
     loaded = true,
@@ -128,9 +116,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment"
   },
-  ["nvim-lsp-installer"] = {
+  ["nvim-compe"] = {
     loaded = true,
-    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer"
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -156,6 +144,15 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim"
   },
+  ["project.nvim"] = {
+    config = { "\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19config.project\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\project.nvim"
+  },
+  ["scrollbar.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Bay\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\scrollbar.nvim"
+  },
   ["tabout.nvim"] = {
     config = { "\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18config.tabout\frequire\0" },
     loaded = true,
@@ -169,18 +166,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: project.nvim
+time([[Config for project.nvim]], true)
+try_loadstring("\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19config.project\frequire\0", "config", "project.nvim")
+time([[Config for project.nvim]], false)
 -- Config for: dashboard-nvim
 time([[Config for dashboard-nvim]], true)
 try_loadstring("\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21config.dashboard\frequire\0", "config", "dashboard-nvim")
 time([[Config for dashboard-nvim]], false)
--- Config for: tabout.nvim
-time([[Config for tabout.nvim]], true)
-try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18config.tabout\frequire\0", "config", "tabout.nvim")
-time([[Config for tabout.nvim]], false)
 -- Config for: galaxyline.nvim
 time([[Config for galaxyline.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22config.galaxyline\frequire\0", "config", "galaxyline.nvim")
 time([[Config for galaxyline.nvim]], false)
+-- Config for: tabout.nvim
+time([[Config for tabout.nvim]], true)
+try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18config.tabout\frequire\0", "config", "tabout.nvim")
+time([[Config for tabout.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

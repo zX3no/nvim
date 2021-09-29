@@ -1,37 +1,38 @@
-# Main
+### Main
 https://github.com/sakhnik/nvim-gdb
 
-# Color Scheme
+### Color Scheme
 https://github.com/tjdevries/colorbuddy.nvim
 https://github.com/RRethy/nvim-base16
 https://github.com/Mofiqul/dracula.nvim
 
-# Might be nice to look through
+### Might be nice to look through
 https://github.com/rockerBOO/awesome-neovim#colorscheme
 
-# Terminal(All of these are broken)
+### Terminal(All of these are broken)
 https://github.com/numToStr/FTerm.nvim
 https://github.com/akinsho/toggleterm.nvim
 https://github.com/oberblastmeister/termwrapper.nvim
 
-# Optional
+### Optional
 https://github.com/lewis6991/gitsigns.nvim
 https://github.com/rafamadriz/friendly-snippets
 
-# LSP
+### LSP
 https://github.com/nvim-treesitter/nvim-treesitter
 https://github.com/hrsh7th/nvim-cmp
 https://github.com/onsails/lspkind-nvim
 
-# This is cool
+### This is cool
 https://github.com/jbyuki/instant.nvim
 https://github.com/notomo/gesture.nvim
 
-# Install 
+### Install 
+```
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+```
 
-
-# Currently Added 
+### Currently Added 
 https://github.com/wbthomason/packer.nvim
 https://github.com/nvim-telescope/telescope.nvim
 https://github.com/jdhao/better-escape.vim
